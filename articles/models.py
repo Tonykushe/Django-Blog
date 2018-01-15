@@ -9,3 +9,9 @@ class Article(models.Model):
 
         # add thumbnail later
         # add in author later
+
+        def __str__(self):
+                return self.title
+
+        def snippet(self):
+                return self.body[:50] + '...'
