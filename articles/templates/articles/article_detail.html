@@ -2,6 +2,7 @@
 
 {% block content %}
         <div class="article container">
+                <img src="{{ article.thumbnail.url }}" alt="thumbnail">
                 <h1>{{ article.title }}</h1>
                 <p>{{ article.body }}</p>
                 <p>{{ article.date }}</p>
